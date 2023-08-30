@@ -1,3 +1,2 @@
-export { default as PokemonForm } from './PokemonForm'
-export { default as PokemonInfo } from './PokemonInfo'
-export { default as FR } from './FetchRequest'
+export { default as PokemonData } from './PokemonForm';
+export { default as PokemonForm } from './PokemonData';

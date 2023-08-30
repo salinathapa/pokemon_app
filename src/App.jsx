@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { PokemonForm, PokemonData } from './components';
 
-const App = () => {
+function App() {
+  const [pokemonName, setPokemonName] = useState('');
+
+  const handleSearch = (name) => {
+    setPokemonName(name);
+  };
+
   return (
-    <div>App</div>
-  )
+    <div className="App">
+      <PokemonForm onSearch={handleSearch} />
+      <PokemonData pokemonName={pokemonName} />
+    </div>
+  );
 }
 
-export default App
+export default App;
