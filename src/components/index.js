@@ -1,2 +1,2 @@
-export { default as PokemonData } from './PokemonForm';
-export { default as PokemonForm } from './PokemonData';
+export { default as PokemonData } from './PokemonData';
+export { default as PokemonForm } from './PokemonForm';
